@@ -1,0 +1,14 @@
+let firstNumber = 100;
+let secondNumber = 40;
+let resultAddition = firstNumber + secondNumber;
+let resultSubtraction = firstNumber - secondNumber;
+let resultMultiplication = firstNumber * secondNumber;
+let resultDivision = firstNumber / secondNumber;
+console.log ('firstNumber = 100');
+console.log('secondNumber = 40');
+console.log('Operations in order are addition, subtraction, multiplication, then division');
+console.log (resultAddition);
+console.log (resultSubtraction);
+console.log (resultMultiplication);
+console.log (resultDivision);
+console.log('Operations Complete');
