@@ -7,7 +7,7 @@ const drivingAge = 16;
 
 
 if (age-drivingAge > 0) {
-  console.log(`${firstName} ${lastName} is ${age}.`)
+  console.log(`${firstName} ${lastName} is ${age}.`);
   console.log(`${firstName} ${lastName} ${affirmative} and has been driving for ${age-drivingAge} years.`);
 }
 else {
