@@ -3,17 +3,11 @@ function recieveInput() {
 	userInput = userInput * userInput;
 	alert(userInput);
 }
-//let squaredInput = ' ';
-//
-//function squareCalc(squareInput) {
-//  squaredValue = squareInput**2;
-//  return squaredValue;
-//}
-//
-//squareCalc(squaredInput);
+
 function recieveInput2() {
-	let userInput = prompt('Enter the first number');
+	let userInputOne = prompt('Enter the first number');
     let userInputTwo = prompt('Enter the second number');
-	outputValue = userInput * userInputTwo;
+    let outputValue = 0;
+	outputValue = userInputOne * userInputTwo;
 	alert(outputValue);
 }
