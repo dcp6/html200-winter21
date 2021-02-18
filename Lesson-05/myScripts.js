@@ -19,24 +19,38 @@ function bankApplication() {
                     pressedKey = pressedKey.toUpperCase();
 
                 }//withdraw amount bracket//
-                else if (totalLeft < 300 && totalLeft >= 0) {
+                else if (totalLeft < 300 && totalLeft > 0) {
                     let confirmBox = confirm('Please confirm you wish to go below a balance of $300.');
                     if (confirmBox = true){
                     total = total - withdrawlAmount;
-                    alert('Your total is:' + ' $' + total);
+                    alert('Your total is:' + '$' + total);
+                    pressedKey = prompt('Press Q to quit, W to withdraw, D to deposit, or B to see your balance');
+                    pressedKey = pressedKey.toUpperCase();
                     pressedKey = pressedKey.toUpperCase();
                     }//confirm box closing bracket//
                     else {
                     alert('You chose not to withdraw any money');
-                   
+                    pressedKey = prompt('Press Q to quit, W to withdraw, D to deposit, or B to see your balance');
+                    pressedKey = pressedKey.toUpperCase();
                     }//confirm box second closing bracket//
 
                 } else {
                     alert('You cannot withdraw any more money.');
                 }
-                  pressedKey = prompt('Press Q to quit, W to withdraw, D to deposit, or B to see your balance');
-                    pressedKey = pressedKey.toUpperCase();
-                 break;
+                  
+//                if (totalLeft < 100 && totalLeft > 0){
+//                total = total - withdrawlAmount;
+//                alert('Your balance is below $100')
+//                pressedKey = prompt('Press Q to quit, W to withdraw, D to deposit, or B to see your balance');
+//                    pressedKey = pressedKey.toUpperCase();
+//                }
+//                else {
+//                alert('You cannot withdraw any more money');
+//                pressedKey = prompt('Press Q to quit, W to withdraw, D to deposit, or B to see your balance');
+//                    pressedKey = pressedKey.toUpperCase();
+//                }
+                
+                break;
 
             case 'D':
                 depositAmount = Number(prompt('Enter the amount you wish to deposit'));
